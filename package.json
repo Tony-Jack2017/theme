@@ -1,0 +1,8 @@
+{
+  "name": "@apsc-ui/color",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Tony-Jack2017/color.git",
+  "author": "GWR <815378559@qq.com>",
+  "license": "MIT"
+}
