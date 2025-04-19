@@ -4,5 +4,14 @@
   "main": "index.js",
   "repository": "https://github.com/Tony-Jack2017/color.git",
   "author": "GWR <815378559@qq.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "node ./src/index.js"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@material/material-color-utilities": "^0.3.0",
+    "tinycolor2": "^1.6.0"
+  }
 }
