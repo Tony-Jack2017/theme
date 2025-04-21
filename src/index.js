@@ -9,7 +9,18 @@ const createTheme = (theme, isDark) => {
   return palette
 };
 
-console.log(createTheme(defaultTheme, false))
+const transValueToVariable = (prefix, valueList, brightness) => {
+  return Object.keys(valueList).reduce((pre, item) => {
+    return pre.concat(...brightness.map((bright, index) => {
+      return {
+        [`--${prefix}-${item}-${bright}`]: valueList[item][index]
+      }
+    }))
+  }, [])
+}
+
+// console.log(createTheme(defaultTheme, false))
+console.log(transValueToVariable("apsc", createTheme(defaultTheme, false), LIGHT_BRIGHTNESS))
 
 export default {
   createTheme,
